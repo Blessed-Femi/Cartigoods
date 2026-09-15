@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Typography, Stack, Card, CardContent, CardMedia, Button, Divider, CircularProgress } from '@mui/material';
+import { Box, Typography, Stack, Card, CardMedia, Button, Divider, CircularProgress, TextField, Badge } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import productService from '../services/productService';
 import reviewService from '../services/reviewService';
@@ -260,7 +260,8 @@ const ProductDetail = () => {
           )}
         </Box>
       )}
-    );
-  };
+    </Box>
+  );
+};
 
 export default ProductDetail;

@@ -1,0 +1,18 @@
+// Mock order service
+const orderService = {
+  createOrder: async (orderData) => {
+    // Mock implementation
+    return { id: 'mock-order-id', ...orderData };
+  },
+  getOrderById: async (id) => {
+    return { id, items: [] };
+  },
+  getUserOrders: async (userId) => {
+    return [];
+  },
+  updateOrderStatus: async (id, status) => {
+    return { id, status };
+  }
+};
+
+export default orderService;
